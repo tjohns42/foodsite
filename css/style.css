@@ -1,0 +1,642 @@
+*{margin: 0; padding: 0; font-family: Verdana, Geneva, sans-serif; font-size: 14px; list-style: none;}
+a{border: none; text-decoration: none;}
+a img{border: none;}
+.clear{clear: both; float: none;}
+.left{float: left;}
+.right{float: right;}
+
+/* Global Styles */
+
+a{
+		color: #0085b7;
+		transition: color 0.2s ease-out;
+		-moz-transition: color 0.2s ease-out;
+		-webkit-transition: color 0.2s ease-out;
+		-o-transition: color 0.2s ease-out;
+}
+
+a:hover{
+		color: #0085b7;
+}
+
+body{
+		box-shadow: 0 0 200px 0 #444 inset;
+		min-height: 100%;
+}
+
+.categories ul li{
+		background-color: #444;
+		border-radius: 20px;
+		color: #0085b7;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 4px 8px;
+		margin: 2px 4px;
+}
+
+.container{
+		margin: 0 auto;
+		padding: 35px 0;
+		width: 960px;
+}
+
+footer{
+		color: #777;
+		background-color: #222;
+		border: 2px solid #222;
+		border-radius: 0 0 15px 15px;
+		height: 35px;
+		width: 960px;
+}
+
+footer div{
+		font-size: 11px;
+		padding: 12px 15px;
+}
+
+footer .right a{
+		color: #666;
+		font-size: 11px;
+		text-decoration: underline;
+}
+
+footer .right a:hover{
+		color: #0085b7;
+}
+
+h1{
+		color: #0085b7;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 32px;
+		text-shadow: 2px 2px 3px #222;
+}
+
+h2{
+		color: #222;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 24px;
+}
+
+h3{
+		color: #222;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 20px;
+}
+
+header #logo h1{
+		color: #0085b7;
+		font-size: 38px;
+		line-height: 38px;
+		margin: 0 0 -42px 0;
+		padding: 0 0 0 20px;
+}
+
+header #logo h1 span{
+		background-image: url(../images/logo_bg.jpg);
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		color: #eee;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 38px;
+		padding: 0 0 0 85px;
+		text-shadow: 0 0 2px #000;
+}
+
+header nav{
+		background-color: #222;
+		border: 2px solid #222;
+		border-radius: 15px 15px 0 0;
+		width: 960px;
+}
+
+header nav ul{
+		float: right;
+		padding: 0 20px 0 0;
+}
+
+header nav ul li{
+		display: inline-block;
+}
+
+header nav ul li a{
+		color: #eee;
+		display: inline-block;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 18px;
+		padding: 11px 15px;
+		text-shadow: 0 0 2px #000;
+		transition: color 0.2s ease-out;
+		-moz-transition: color 0.2s ease-out;
+		-webkit-transition: color 0.2s ease-out;
+		-o-transition: color 0.2s ease-out;
+}
+
+header nav ul li a:hover{
+		color: #0085b7; 
+}
+
+header nav ul li .curpage{
+		color: #0085b7;
+}
+
+html{
+		height: 100%;
+}
+
+iframe{
+		border: none;
+}
+
+.main{
+		background-color: #eee;
+		border: 2px solid #222;
+		border-top: none;
+		min-height: 400px;
+		width: 960px;
+}
+
+p{
+		font-size: 16px;
+		padding: 5px;
+}
+
+.rating{
+		background-color: #777;
+		border-radius: 20px;
+		display: inline-block;
+		height: 40px;
+		text-align: right;
+		width: 275px;
+}
+
+.rating .rating_bar{
+		background-image: url(../images/rating_bar.png);
+		background-repeat: no-repeat;
+		float: left;
+		height: 40px;
+		width: 200px;
+}
+
+.rating .rating_percent{
+		background-image: url(../images/rating_bar_full.png);
+		height: 40px;
+}
+
+.rating .rating_number{
+		color: #222;
+		display: inline-block;
+		font-weight: bold;
+		padding: 13px 0;
+		text-align: center;
+		width: 75px;
+}
+
+/*page styles */
+
+
+/* contact */
+
+#contact .content{
+		margin: 0 auto;
+		padding: 25px 0 25px 0;
+		width: 670px;
+}
+
+#contact .content form input{
+		border: 1px solid #444;
+		border-radius: 12px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: 14px;
+		height: 30px;
+		outline: none;
+		padding: 0 0 0 10px;
+		margin: 0 0 20px 0;
+		width: 670px;
+}
+
+#contact .content form input:focus{
+  box-shadow: 0px 0px 3px 1px #0085b7;
+}
+
+#contact .content form input[name='captcha']{
+		width: 60px;
+}
+
+#contact .content form input[type='submit']{
+		background-color: #444;
+		border: 2px solid #222;
+		border-radius: 14px;
+		color: #0085b7;
+		cursor: pointer;
+		display: block;
+		float: right;
+		font-weight: bold;
+		padding: 3px 5px;		
+		margin: 0 20px 0 0;
+		text-align: center;
+		text-transform: uppercase;
+		width: 75px;
+}
+
+#contact .content form input[name='submit']:hover{
+		box-shadow: 0px 0px 3px 1px #0085b7;
+}
+
+#contact .content form label{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0 0 5px 0;
+}
+
+#contact .content form label span{
+		color: #0085b7;
+}
+
+#contact .content form textarea{
+		border: 1px solid #444;
+		border-radius: 12px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: 14px;
+		height: 100px;
+		outline: none;
+		padding: 10px 0 0 10px;
+		margin: 0 0 20px 0;
+		width: 670px;
+}
+
+#contact .content form textarea:focus{
+  box-shadow: 0px 0px 3px 1px #0085b7;
+}
+
+#contact .content #forminfo{
+		display: inline-block;
+		float: right;
+		font-size: 10px;
+}
+
+#contact .content #forminfo span{
+		color: #0085b7;
+		font-size: 14px;
+}
+
+#contact .content #returntext{
+		height: 30px;
+}
+
+#contact .content #returntext p{
+		font-size: 16px;
+		font-weight: bold;
+		padding: 15px 0;
+		text-align: center;
+}
+
+#contact .content #returntext .failure{
+		color: #9e0b0f;
+}
+
+#contact .content #returntext .success{
+		color: #00a651;
+}
+
+/* home */
+#home .content{
+		float: left;
+		padding: 0 15px;
+		width: 629px;
+}
+
+#home .content #links{
+		margin: 50px 0 0 0;
+}
+
+#home .content #links .listing{
+		background-color: #222;
+		border: 1px solid #222;
+		border-radius: 10px;
+		float: left;
+		margin: 0 16px;
+		width: 175px;
+}
+
+#home .content #links .listing a h2{
+		color: #eee;
+		font-size: 22px;
+		padding: 2px 0;
+		text-align: center;
+		transition: color 0.2s ease-out;
+		-moz-transition: color 0.2s ease-out;
+		-webkit-transition: color 0.2s ease-out;
+		-o-transition: color 0.2s ease-out;
+}
+
+#home .content #links .listing a h2:hover{
+		color: #0085b7;
+}
+
+#home .content #links .listing a img{
+		border-radius: 10px 10px 0 0;
+}
+
+#home .sidebar{
+		border-left: 1px solid #444;
+		float: right;
+		padding: 10px 0 0 0;
+		width: 300px;
+}
+
+#home .sidebar aside .featured{
+		background-color: #222;
+		height: 100px;
+		margin: 0 0 35px 0;
+		width: 300px;
+}
+
+#home .sidebar aside .featured a{
+		color: #777;
+		display: inline-block;
+		height: 100px;
+		text-align: center;
+		width: 300px;
+}
+
+#home .sidebar aside .featured a h3{
+		color: #777;
+		margin: 0;
+		padding: 35px 0 0 0;
+		transform:rotate(-10deg);
+		-ms-transform:rotate(-10deg);
+		-moz-transform:rotate(-10deg);
+		-webkit-transform:rotate(-10deg);
+		-o-transform:rotate(-10deg);
+		transition: color 0.2s ease-out;
+		-moz-transition: color 0.2s ease-out;
+		-webkit-transition: color 0.2s ease-out;
+		-o-transition: color 0.2s ease-out;
+		
+}
+
+#home .sidebar aside .featured a:hover h3{
+		color: #0085b7;
+}
+
+#home .sidebar aside h2{
+		margin: 10px 0;
+		text-align: center;
+}
+
+#home .sidebar aside h3{
+		padding: 10px 0 0 10px;
+		margin: -30px 0 0 30px;
+}
+
+#home .sidebar aside hr{
+		border: 1px solid #222;
+		margin: 25px auto;
+		width: 80%;
+}
+
+#home .sidebar aside ol{
+		counter-reset: li;
+		list-style: decimal;
+}
+
+#home .sidebar aside ol li:before{
+		background-color: #222;
+		border-radius: 15px;
+		color: #0085b7;
+		content: counter(li);
+		counter-increment: li;
+		display: inline-block;
+		font-family: 'Fjalla One', Verdanda, sans-serif;
+		font-size: 18px;
+		line-height: 30px;
+		height: 30px;
+		margin: 0 0 0 2px;
+		text-align: center;
+		width:30px;
+}
+
+#home .sidebar aside p{
+		font-size: 14px;
+}
+
+/* Restaurants */
+
+#restaurants aside{
+		float: left;
+		height: 100%;
+		padding: 10px;
+		width: 200px;
+}
+
+#restaurants aside h2{
+		padding: 25px 0 5px 20px;
+}
+
+#restaurants aside ul li{
+		margin: 2px 0;
+}
+
+#restaurants aside ul li input{
+		border-radius: 3px;
+}
+
+#restaurants aside ul li input[type="checkbox"] {
+    display:none;
+}
+
+#restaurants aside ul li input[type="checkbox"] + label {
+    background:url(../images/checkbox_sprite.png) no-repeat;
+    cursor:pointer;
+    display:inline-block;
+				height: 20px;
+    margin:-1px 4px 0 0;
+				padding: 0 0 0 25px;
+    vertical-align:middle;
+}
+
+#restaurants aside ul li input[type="checkbox"]:checked + label {
+    background:url(../images/checkbox_sprite.png) 0 -20px no-repeat;
+}
+
+#restaurants .content{
+		border-left: 1px solid #222;
+		float: right;
+		padding: 10px 0;
+		width: 720px;
+}
+
+#restaurants .content h1{
+		margin: 0 0 15px 10px;
+}
+
+#restaurants .content #restaurant_list .listing{
+		padding: 15px 20px;
+		margin: 20px 0 0 0;
+}
+
+#restaurants .content #restaurant_list .listing:nth-child(even){
+		background-color: #ddd;
+}
+
+#restaurants .content #restaurant_list .listing a{
+		font-weight: bold;
+}
+
+#restaurants .content #restaurant_list .listing a:hover{
+		text-decoration: underline;
+}
+
+#restaurants .content #restaurant_list .listing .link{
+		display: inline-block;
+		margin: 10px 0 0 0;
+		vertical-align: top;
+}
+
+#restaurants .content #restaurant_list .listing .rating{
+		margin: 0 0 0 -20px;
+}
+
+/* Restaurant Pages */
+
+.restaurant_page aside{
+		float: left;
+		padding: 20px 10px;
+		width: 300px;
+}
+
+.restaurant_page aside a{
+		font-weight: bold;
+		margin: 0 0 0 15px;
+}
+
+.restaurant_page aside a:hover{
+		text-decoration: underline;
+}
+
+.restaurant_page aside .address{
+		text-align: center;
+}
+
+.restaurant_page aside iframe{
+		border-radius: 10px;
+}
+
+.restaurant_page .content{
+		float: right;
+		padding: 20px 10px;
+		width: 600px;
+}
+
+.restaurant_page .content .review_box{
+		border: 2px solid #222;
+		border-radius: 10px;
+		margin: 40px 20px 20px 10px;
+		width: 550px;
+}
+
+.restaurant_page .content .review_box .add_review_box{
+		background-color: #ddd;
+		border-radius: 0 0 10px 10px;
+		padding: 10px;
+}
+
+.restaurant_page .content .review_box .add_review_box form{
+		margin: 5px 0;
+}
+
+.restaurant_page .content .review_box .add_review_box form textarea{
+		border: 1px solid #444;
+		border-radius: 15px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		min-height: 150px;
+		margin: 0 auto 5px auto;
+		padding: 10px;
+		outline: none;
+		width: 80%;
+}
+
+.restaurant_page .content .review_box .add_review_box form textarea:focus{
+		box-shadow: 0px 0px 3px 1px #0085b7;
+}
+
+.restaurant_page .content .review_box .add_review_box form input#reviewSubmit{
+		color: #0085b7;
+		cursor: pointer;
+		display: inline-block;
+		background-color: #444;
+		border: 2px solid #222;
+		border-radius: 14px;
+		font-weight: bold;
+		margin: 5px 0 0 25px;
+		padding: 3px 5px;
+		text-transform: uppercase;
+		vertical-align: top;
+}
+
+.restaurant_page .content .review_box .add_review_box form input#reviewSubmit:hover{
+		box-shadow: 0px 0px 3px 1px #0085b7;
+}
+
+.restaurant_page .content .review_box .add_review_box .rating{
+		margin: 0 0 0 -10px;
+}
+
+.restaurant_page .content .review_box h2{
+		background-color: #222;
+		border-radius: 5px 5px 0 0;
+		color: #0085b7;
+		padding: 5px 0 0 5px;
+}
+
+.restaurant_page .content .review_box .reviews{
+		border-bottom: 1px solid #222;
+		max-height: 400px;
+		overflow-y: auto;
+}
+
+.restaurant_page .content .review_box .reviews .listing{
+		padding: 10px 0;
+}
+
+.restaurant_page .content .review_box .reviews .listing:nth-child(even){
+		background-color: #ddd;
+}
+
+.restaurant_page .content .review_box .reviews .listing p{
+		padding: 5px 10px;
+}
+
+.restaurant_page .content .review_box .reviews .listing p:before{
+		content:'\201C';
+		font-size: 20px;
+		line-height: 10px;
+		color: #0085b7;
+}
+.restaurant_page .content .review_box .reviews .listing p:after{
+		color: #0085b7;
+		content:'\201D';
+		font-size: 20px;
+		line-height: 14px;
+}
+
+
+/* Map */
+
+#map #map_links ul li{
+		display: inline-block;
+		font-weight: bold;
+		padding: 5px 16px;
+}
+
+#map #map_links ul li a.currmap{
+		color: #0085b7;
+}
+
